@@ -2,64 +2,47 @@
 <html>
   <head>
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
-.bg-container{
+       @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+.container {
     background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/chatbg.png");
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
+    padding: 20px;
 }
-.button-blue{
-    color:#ffffff;
-    background-color: #47a3f3;
-    border-bottom-left-radius: 10px;
-    height: 30px;
-    width: 100vw;
-    padding:10px;
+
+.main-heading {
+    color: #ffffff;
+    text-align: center;
+    background-color:#323f4b ;
+}
+
+.paragraph {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  padding: 10px;
+}
+
+.paragraph-top-left {
+    border-bottom-left-radius: 15px;
     text-align: right;
-    
+    background-color: #47a3f3;
 }
-.button-black{
-    color:#ffffff;
-    background-color:#52606d;
-    border-bottom-right-radius: 10px;
-    height: 30px;
-    width: 100vw;
-    padding:10px;
+
+.paragraph-top-right {
+    border-bottom-right-radius: 15px;
+    background-color: #52606d;
     text-align: left;
-}
-.button-darkblue{
-    color:#ffffff;
-    background-color: #323f4b;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    height: 50px;
-    width: 100vw;
-    font-size: 20px;
-    font-weight: bold;
-}
-.button{
-    font-family: "Roboto";
-    font-size: 16px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    margin: 10px;
-    height: 50px;
-    max-width: 96%;
-    word-wrap: break-word;
 }
     </style>
   </head>
   <body>
-    <div class="bg-container">
-        <button class="button-darkblue">Rahul</button>
-        <button class="button button-blue">Hello Rahul,how are you?</button>
-        <button class="button button-black">Hi Varakumar,I am good.How about you?</button>
-        <button class="button button-blue">I'm fine. i published my website recently</button>
-        <button class="button button-black">Oh great Varakumar! Can you send me the URL?</button>
-        <button class="button button-blue">https://varakumar.ccbp.tech</button>
-        <button class="button button-black">Awesome Varakumar,where did you learn?</button>
-        <button class="button button-blue">NxtWave CCBP 4.0 Program</button>
+    <div class="container">
+        <h1 class="main-heading">Rahul</h1>
+        <p class="paragraph paragraph-top-left">Hello Rahul,how are you?</p>
+        <p class="paragraph paragraph-top-right">Hi Varakumar,I am good.How about you?</p>
+        <p class="paragraph paragraph-top-left">I'm fine. i published my website recently</p>
+        <p class="paragraph paragraph-top-right">Oh great Varakumar! Can you send me the URL?</p>
+        <p class="paragraph paragraph-top-left">https://varakumar.ccbp.tech</p>
+        <p class="paragraph paragraph-top-right">Awesome Varakumar,where did you learn?</p>
+        <p class="paragraph paragraph-top-left">NxtWave CCBP 4.0 Program</p>
     </div>
   </body>
 </html>
