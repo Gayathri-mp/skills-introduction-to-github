@@ -3,7 +3,7 @@
     <head>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
-    .background-top-section {
+            .background-top-section {
       background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diwali-bg.png");
       height: 30vh;
       background-size: cover;
@@ -13,7 +13,34 @@
         font-size: 40px;
         font-family: "Caveat";
         font-style: bold;
+        width: 200px;
+        padding: 15px;
+    }
+    .bottom-section{
+        background-color:#e6f6ff;
+    }
+    .card-item{
+        background-color: white;
         width: 150px;
+        border-radius: 10px;
+        text-align:center;
+        padding:20px;
+    }
+    .card-image{
+         width:100px;
+         height:80px;
+    }
+    .card-heading{
+        font-size: 16px;
+        font-family:"roboto";
+        color: #616e7c;
+        padding:15px;
+    }
+    .card-price{
+        color: #323f4b;
+        font-family:"roboto";
+        font-weight: bold;
+        font-size: 16px;
     }
         </style>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -24,6 +51,13 @@
     <body>
         <div class="background-top-section">
             <h1 class="top-section-heading">Celebrate Diwali with your friends </h1>
+        </div>
+        <div class = "bottom-section">
+            <div class = "card-item">
+                <img src ="https://img.freepik.com/free-psd/realistic-ramadan-lantern-illustration-design_23-2151200232.jpg?t=st=1744306070~exp=1744309670~hmac=0e6ae287918df875fd6518648825fae78d39926594bf6c3089ca6788ad581859&w=826" class="card-image">
+                <h1 class="card-heading">Diwali Lamps</h1>
+                <p class ="card-price">Rs:369</p>
+            </div>
         </div>
     </body>
 </html>
