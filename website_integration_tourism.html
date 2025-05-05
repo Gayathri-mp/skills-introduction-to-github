@@ -164,7 +164,7 @@
         />
       </div>
 
-      <div class="favourite-place-card-container d-flex flex-row">
+      <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectiondetailedviewvaranasitemple')">
         <div>
           <h1 class="favourite-place-card-heading">Varanasi Temple</h1>
           <p class="favourite-place-card-description">
@@ -219,8 +219,8 @@
               The Taj Mahal is a stunning white marble mausoleum located in Agra, India, and is one of the most iconic symbols of love in the world. It was built by the Mughal Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal, who died during childbirth in 1631. Construction began in 1632 and took over 20 years to complete. The Taj Mahal is a masterpiece of Mughal architecture, combining elements of Persian, Islamic, and Indian styles. It is renowned for its symmetry, intricate carvings, and the way its white marble reflects different hues depending on the time of day. In 1983, it was designated a UNESCO World Heritage Site and continues to be one of the most visited and admired monuments in the world
             </p>
           </div>
+          <button class="btn btn-primary button-pg" onclick="display('sectionfavplaces')">Back</button>
           </div>
-    <button class="btn btn-primary button-pg" onclick="display('sectionfavplaces')">Back</button>
   </div>
 </div>
   <div id="sectiondetailedviewgoldentemple">
@@ -306,8 +306,51 @@
          <p class = "detailed-view-card-paragraph">
              Mysore Palace, also known as the Amba Vilas Palace, is a historical royal residence located in Mysuru (Mysore), Karnataka, India. It was the official residence of the Wadiyar dynasty, who ruled the Kingdom of Mysore. Built in the Indo-Saracenic architectural style, the palace blends Hindu, Muslim, Rajput, and Gothic styles.</p>
        </div>
+       <button class="btn btn-primary button-pg" onclick="display('sectionfavplaces')">Back</button>
      </div>
-     <button class="btn btn-primary button-pg" onclick="display('sectionfavplaces')">Back</button>
+</div>
+ </div>
+ <div id="sectiondetailedviewvaranasitemple">
+  <div class="detailed-view-bg-container" >
+    <h1 class="detailed-view-heading">
+      Detailed View
+    </h1>
+    <div class =" detailed-view-card-container">
+     <div id="mysorepalace" class="carousel slide" data-ride="carousel">
+       <ol class="carousel-indicators">
+         <li data-target="#mysorepalace" data-slide-to="0" class="active"></li>
+         <li data-target="#mysorepalace" data-slide-to="1"></li>
+         <li data-target="#mysorepalace" data-slide-to="2"></li>
+       </ol>
+       <div class="carousel-inner">
+         <div class="carousel-item active">
+           <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace1-img.png" class="d-block w-100" alt="...">
+         </div>
+         <div class="carousel-item">
+           <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace2-img.png" class="d-block w-100" alt="...">
+         </div>
+         <div class="carousel-item">
+           <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace3-img.png" class="d-block w-100" alt="...">
+         </div>
+       </div>
+       <a class="carousel-control-prev" href="#mysorepalace" role="button" data-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="sr-only">Previous</span>
+       </a>
+       <a class="carousel-control-next" href="#mysorepalace" role="button" data-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="sr-only">Next</span>
+       </a>
+     </div>
+       <div class="detailed-view-text-container">
+         <h1 class = "detailed-view-card-heading">
+           Mysore Palace  
+         </h1>
+         <p class = "detailed-view-card-paragraph">
+             Mysore Palace, also known as the Amba Vilas Palace, is a historical royal residence located in Mysuru (Mysore), Karnataka, India. It was the official residence of the Wadiyar dynasty, who ruled the Kingdom of Mysore. Built in the Indo-Saracenic architectural style, the palace blends Hindu, Muslim, Rajput, and Gothic styles.</p>
+       </div>
+       <button class="btn btn-primary button-pg" onclick="display('sectionfavplaces')">Back</button>
+     </div>
 </div>
  </div>
     <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
