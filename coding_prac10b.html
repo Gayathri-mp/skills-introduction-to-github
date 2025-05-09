@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.bg {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/podcasts-bg.png");
+    background-size: cover;
+    height: 40vh;
+}
+
+.Podcasts-heading {
+    color: #ffffff;
+    font-size: 24px;
+    font-family: "Roboto";
+    font-weight: 500;
+    padding: 20px;
+}
+
+.container {
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.image {
+    height: 110px;
+    width: 140px;
+}
+
+.heading {
+    color: #151765;
+    font-family: "Roboto";
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.para {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.blue-container {
+    background-color: #151765;
+    padding: 20px;
+}
+
+.section-heading-blue {
+    color: #ffffff;
+    font-size: 13px;
+    font-family: "Roboto";
+}
+
+.section-para-blue {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: 600;
+}
+
+.text-container {
+    margin-left: 20px;
+}
+
+.white-container {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.section-heading-white {
+    color: #151765;
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: 600;
+}
+
+.section-para-white {
+    color: #5a7184;
+    font-size: 13px;
+    font-family: "Roboto";
+}
+
+.button {
+    border-radius: 20px;
+    background-color: #151765;
+    color: #ffffff;
+    width: 80px;
+    margin: 20px;
+}
+</style>
+</head>
+
+<body>
+    <div id="sectionHome">
+        <div class="bg">
+            <h1 class="Podcasts-heading">Podcasts</h1>
+        </div>
+        <div class="d-flex flex-row">
+            <div class="container" onclick="display('sectionone')">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/puri-jagannadh-img.png" class="image">
+                <h1 class="heading">Puri jagannadh</h1>
+                <p class="para">24 Episodes</p>
+            </div>
+            <div class="container" onclick="display('sectiontwo')">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tedx-img.png" class="image">
+                <h1 class="heading">Tedx talks</h1>
+                <p class="para">12 Episodes</p>
+            </div>
+        </div>
+        <div class="d-flex flex-row">
+            <div class="container" onclick="display('sectionthree')">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/sadhguru-img.png" class="image">
+                <h1 class="heading">Sadhguru</h1>
+                <p class="para">49 Episodes</p>
+            </div>
+            <div class="container" onclick="display('sectionfour')">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/on-purpose-img.png" class="image">
+                <h1 class="heading">On purpose</h1>
+                <p class="para">49 Episodes</p>
+            </div>
+        </div>
+    </div>
+    <div id="sectionone">
+        <div class="blue-container d-flex flex-row">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/puri-jagannadh-img.png" class="image">
+            <div class="text-container">
+                <h1 class="section-heading-blue">podcast</h1>
+                <p class="section-para-blue">Puri Jagannadh<br>Podcast</p>
+                <p class="section-heading-blue">The Puri Jagannadh Podcast</p>
+            </div>
+        </div>
+        <div class="white-container d-flex flex-row">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/puri-jagannadh-img.png" class="image">
+            <div class="text-container">
+                <h1 class="section-heading-white">Molecular Gastronomy</h1>
+                <p class="section-para-white">Anything happens there it<br>will not cook,...</p>
+                <p class="section-para-white">15 min</p>
+            </div>
+        </div>
+        <div class="white-container d-flex flex-row">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/puri-jagannadh-img.png" class="image">
+            <div class="text-container">
+                <h1 class="section-heading-white">Mysterious book</h1>
+                <p class="section-para-white">The Voynich manuscript is<br>the 15th century book...</p>
+                <p class="section-para-white">12 min</p>
+            </div>
+        </div>
+        <div class="white-container d-flex flex-row">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/puri-jagannadh-img.png" class="image">
+            <div class="text-container">
+                <h1 class="section-heading-white">Predator Drone</h1>
+                <p class="section-para-white">The most powerfull drone.<br>It is 10 feet height...</p>
+                <p class="section-para-white">10 min</p>
+            </div>
+        </div>
+        <div class="white-container d-flex flex-row">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/puri-jagannadh-img.png" class="image">
+            <div class="text-container">
+                <h1 class="section-heading-white">Paella</h1>
+                <p class="section-para-white">The national dish of spain.<br>It was the first star...</p>
+                <p class="section-para-white">6 min</p>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn button" onclick="display('sectionHome')">Back</button>
+        </div>
+    </div>
+    <div id="sectiontwo">
+        <div class="blue-container d-flex flex-row">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tedx-img.png" class="image">
+            <div class="text-container">
+                <h1 class="section-heading-blue">podcast</h1>
+                <p class="section-para-blue">The Tedx<br>Podcast</p>
+                <p class="section-heading-blue">The Tedx Podcast</p>
+            </div>
+        </div>
+        <div class="white-container d-flex flex-row">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tedx-img.png" class="image">
+            <div class="text-container">
+                <h1 class="section-heading-white">The science of friction</h1>
+                <p class="section-para-white">Triubology:it's a funny<br>sounding word you might...</p>
+                <p class="section-para-white">12 min</p>
+            </div>
+        </div>
+        <div class="white-container d-flex flex-row">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tedx-img.png" class="image">
+            <div class="text-container">
+                <h1 class="section-heading-white">Unleash you </h1>
+                <p class="section-para-white">What can we learn from the<br>world's most enduring...</p>
+                <p class="section-para-white">8 min</p>
+            </div>
+        </div>
+        <div class="white-container d-flex flex-row">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tedx-img.png" class="image">
+            <div class="text-container">
+                <h1 class="section-heading-white">3 pschological tricks</h1>
+                <p class="section-para-white">we all want to save more<br>money-but overall, ...</p>
+                <p class="section-para-white">10 min</p>
+            </div>
+        </div>
+        <div class="white-container d-flex flex-row">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tedx-img.png" class="image">
+            <div class="text-container">
+                <h1 class="section-heading-white">The case for stubborn</h1>
+                <p class="section-para-white">The decade is a moment of<br>choice unlike any we...</p>
+                <p class="section-para-white">12 min</p>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn button" onclick="display('sectionHome')">Back</button>
+        </div>
+    </div>
+    <div id="sectionthree">
+        <div class="blue-container d-flex flex-row">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/sadhguru-img.png" class="image">
+            <div class="text-container">
+                <h1 class="section-heading-blue">podcast</h1>
+                <p class="section-para-blue">The Sadhguru<br>Podcast</p>
+                <p class="section-heading-blue">The Sadhguru Podcast</p>
+            </div>
+        </div>
+        <div class="white-container d-flex flex-row">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/sadhguru-img.png" class="image">
+            <div class="text-container">
+                <h1 class="section-heading-white">Head or heart</h1>
+                <p class="section-para-white">Sadhguru shares his<br>wisdom on how to make...</p>
+                <p class="section-para-white">16 min</p>
+            </div>
+        </div>
+        <div class="white-container d-flex flex-row">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/sadhguru-img.png" class="image">
+            <div class="text-container">
+                <h1 class="section-heading-white">How to equip yourself</h1>
+                <p class="section-para-white">Society ad human<br>interactions are going...</p>
+                <p class="section-para-white">13 min</p>
+            </div>
+        </div>
+        <div class="white-container d-flex flex-row">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/sadhguru-img.png" class="image">
+            <div class="text-container">
+                <h1 class="section-heading-white">How not to get irritated</h1>
+                <p class="section-para-white">How do you see an<br>unpleasent spouse the...</p>
+                <p class="section-para-white">15 min</p>
+            </div>
+        </div>
+        <div class="white-container d-flex flex-row">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/sadhguru-img.png" class="image">
+            <div class="text-container">
+                <h1 class="section-heading-white">Isha Kriya</h1>
+                <p class="section-para-white">Rooted in the timeless<br>wisdom if the yogic...</p>
+                <p class="section-para-white">16 min</p>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn button" onclick="display('sectionHome')">Back</button>
+        </div>
+    </div>
+    <div id="sectionfour">
+        <div class="blue-container d-flex flex-row">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/on-purpose-img.png" class="image">
+            <div class="text-container">
+                <h1 class="section-heading-blue">podcast</h1>
+                <p class="section-para-blue">On Purpose with<br>Jay</p>
+                <p class="section-heading-blue">The Jay Shetty Podcast</p>
+            </div>
+        </div>
+        <div class="white-container d-flex flex-row">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/on-purpose-img.png" class="image">
+            <div class="text-container">
+                <h1 class="section-heading-white">Patrick Bet David/h1>
+                    <p class="section-para-white">Are you an entrepreneur or<br>have dreams of the mental...</p>
+                    <p class="section-para-white">10 min</p>
+            </div>
+        </div>
+        <div class="white-container d-flex flex-row">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/on-purpose-img.png" class="image">
+            <div class="text-container">
+                <h1 class="section-heading-white">5 Techniques to cope</h1>
+                <p class="section-para-white">Does anxiety looms around<br>every corner of your...</p>
+                <p class="section-para-white">4 min</p>
+            </div>
+        </div>
+        <div class="white-container d-flex flex-row">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/on-purpose-img.png" class="image">
+            <div class="text-container">
+                <h1 class="section-heading-white">Radhanath Swami ON</h1>
+                <p class="section-para-white">World-renowned spiritual<br>leader and philanthropist...</p>
+                <p class="section-para-white">12 min</p>
+            </div>
+        </div>
+        <div class="white-container d-flex flex-row">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/on-purpose-img.png" class="image">
+            <div class="text-container">
+                <h1 class="section-heading-white">3 Ways to let go</h1>
+                <p class="section-para-white">Do the opinion of the others<br>veer you from the core...</p>
+                <p class="section-para-white">13 min</p>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn button" onclick="display('sectionHome')">Back</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://new-assets.ccbp.in/frontend/content/static-ccbp-ui-kit/static-ccbp-ui-kit.js"></script>
+</body>
+
+</html>
