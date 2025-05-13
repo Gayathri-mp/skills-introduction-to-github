@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.bg {
+    background-image: url("https://new-assets.ccbp.in/frontend/static-website/moon-stars-bg.png");
+    background-size: cover;
+    min-height: 100vh;
+}
+.bg-text-container{
+    padding:20px;
+}
+.heading {
+    font-family: "bree serif";
+    font-size: 26px;
+    color: #ffffff;
+}
+
+.para {
+    font-family: "bree serif";
+    font-size: 16px;
+    color: #ffffff;
+}
+.night-island-card{
+    padding:200px
+}
+.night-island-bg-card{
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/moon-bg.png");
+    height:74vh;
+    background-size:cover;
+    border-radius:20px;
+
+}
+.button {
+    background-color: #8e97fd;
+    color: #ffffff;
+    font-family: "bree serif";
+    font-size: 13px;
+    width: 100px;
+    border-radius: 15px;
+}
+
+.bg-main {
+    background-color: #03174c;
+}
+
+.image-two {
+    border-radius: 8px;
+    height: 330px;
+    width: 100vh;
+}
+
+.text-container {
+    padding: 10px;
+}
+
+.para-two {
+    font-family: "bree serif";
+    font-size: 16px;
+    color: #98a1bd;
+}
+
+.heading-two {
+    font-family: "bree serif";
+    font-size: 26px;
+    color: #ffffff;
+}
+
+.heading-three {
+    font-family: "bree serif";
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.image-three {
+    height: 120px;
+    width: 180px;
+    margin: 10px;
+}
+</style>
+</head>
+
+<body>
+    <div id="sectionhome">
+    <div class="bg">
+        <div class="bg-text-container d-flex flex-column justify-content-center text-center">
+            <h1 class="heading">Sleep Music</h1>
+            <p class="para">soothing bedtime music to help you fall into a deep <br />and natural sleep</p>
+            </div>
+        <div class="night-island-card text-center">
+            <div class="night-island-bg-card d-flex flex-column juustify-content-center text-center">
+                <p class="heading">Night Island</p>
+            </div>
+            <p class="para">Non-stop 8-hour mixes of our most popular sleep<br />audio</p>
+            <button class="btn button" onclick="display('sectionMainpg')">Get Started</button>
+           </div>
+        </div>
+
+    </div>
+    <div id="sectionMainpg" class="bg-main">
+        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/clouds-img.png" class="image-two" />
+        <div class="text-container">
+            <h1 class="heading-two">Night Island</h1>
+            <p class="para-two">Ease the mind into a restful night's sleep with these<br />deep,ambient tones.
+                <br /><br />45 MIN SLEEP MUSIC
+            </p>
+            <h1 class="heading-three">Related</h1>
+            <div class="d-flex flex-row">
+                <div>
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/moon-clouds-img.png" class="image-three" />
+                    <h1 class="heading-three">Moon Clouds</h1>
+                    <p class="para-two">55 MIN SLEEP MUSIC</p>
+                </div>
+                <div>
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/sweet-sleep-img.png" class="image-three" />
+                    <h1 class="heading-three">Sweet Sleep</h1>
+                    <p class="para-two">60 MIN SLEEP MUSIC</p>
+                </div>
+            </div>
+            <button class="btn button" onclick="display('sectionhome')">Back</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://new-assets.ccbp.in/frontend/content/static-ccbp-ui-kit/static-ccbp-ui-kit.js"></script>
+</body>
+
+</html>
