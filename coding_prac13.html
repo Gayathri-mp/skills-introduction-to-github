@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+.bg-home{
+    background-color:#ffffff;
+    text-align:center;
+}
+.card {
+    background-color: #f6c56e;
+    box-shadow: 0 4px 10px rgba(174, 85, 85, 0.2);
+    text-align: left;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.bg-container {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/foodbg.png");
+    height: 100vh;
+    background-size: cover;
+}
+.home-heading{
+    font-family: "Bree Serif";
+    font-size: 18px;
+    color:#616e7c;
+}
+
+.main-heading {
+    font-family: "Bree Serif";
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.paragraph {
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.button {
+    font-family: "Roboto";
+    background-color: #ffffff;
+    color: black;
+    border-radius: 10px;
+    border-width: 0px;
+    width: 150px;
+    height: 40px;
+}
+
+.background-top-section {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diwali-bg.png");
+    height: 30vh;
+    background-size: cover;
+}
+
+.top-section-heading {
+    color: white;
+    font-size: 40px;
+    font-family: "Caveat";
+    font-weight: bold;
+    width: 200px;
+    padding: 15px;
+}
+
+.bottom-section {
+    background-color: #e6f6ff;
+    padding: 20px;
+}
+
+.card-item {
+    background-color: white;
+    width: 150px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    margin: 15px;
+}
+
+.card-image {
+    width: 100px;
+    height: 80px;
+}
+
+.card-heading {
+    font-size: 16px;
+    font-family: "roboto";
+    color: #616e7c;
+    padding: 15px;
+    min-height: 60px;
+}
+
+.card-price {
+    color: #323f4b;
+    font-family: "roboto";
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.background-card {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/arvrbg.png");
+    height: 100vh;
+    background-size: cover;
+}
+
+.tech-card {
+    background-color: #ffffff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 25px;
+}
+
+.tech-heading {
+    font-size: 25px;
+    color: #5752ab;
+    font-family: "Bree Serif";
+}
+
+.paragragh-mach {
+    font-size: 18px;
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+.learn-button {
+    font-size: 13px;
+    color: #171f46;
+    font-family: "Roboto";
+    padding: 10px 40px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #d7dfe9;
+    background-color: #ffffff;
+    margin: 20px;
+}
+
+.save-button {
+    font-size: 13px;
+    font-family: "Roboto";
+    padding: 10px 40px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #d7dfe9;
+    color: #ffffff;
+    background-color: #5752ab;
+    margin: 20px;
+}
+.background-card-newspaper {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/newsbg.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+.news-card {
+    background-color: #ffffff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 25px;
+}
+
+.small-h {
+    font-family: "Roboto";
+    font-size: 15px;
+    color: #7b8794;
+}
+
+.big-h {
+    font-family: "Roboto";
+    font-size: 25px;
+    color: #323f4b;
+    margin-bottom: 15px;
+}
+
+.cricket-paragraph {
+    font-family: "Roboto";
+    font-size: 15px;
+    color: #7b8794;
+}
+
+.cricket-button {
+    font-family: "Roboto";
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #323f4b;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+.card-image-home {
+    width: 200px;
+    height: 120px;
+    margin:5px;
+}
+.image-home{
+    width:50vw;
+}
+    </style>
+</head>
+
+<body>
+    <div id="sectionHome">
+        <div class="bg-home">">
+        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/software-developer-img.png" class="image-home"/>
+        <h1 class="main-heading">My projects</h1>
+        <p class="home-heading">These are a few of my Static Website projects that i have developed using<br/>HTML,CSS and Bootstrap</p>
+    <div class="d-flex flex-row justify-content-center">
+        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/advanced-technologies-img.png" class="card-image-home" onclick="display('sectionOne')" />
+        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diwali-img.png" class="card-image-home" onclick="display('sectionTwo')" />
+    </div>
+    <div class="d-flex flex-row justify-content-center">
+        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/food-img.png" class="card-image-home" onclick="display('sectionThree')" />
+        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/news-paper-img.png" class="card-image-home" onclick="display('sectionFour')" />
+    </div>
+        </div>
+    </div>
+    <div id="sectionOne">
+        <div class="background-card d-flex flex-column justify-content-end">
+        <div class="tech-card">
+            <h1 class="tech-heading">Advanced Technologies</h1>
+            <p class="paragragh-mach">Machinery and equipment developed from the application of scientific knowledge.</p>
+            <button class="learn-button" >Learn more</button>
+            <button class="save-button" onclick="display('sectionHome')">Back</button>
+        </div>
+    </div>
+    </div>
+    <div id="sectionTwo">
+        <div class="background-top-section">
+            <h1 class="top-section-heading">Celebrate Diwali with your friends </h1>
+        </div>
+        <div class="bottom-section">
+            <div class="d-flex flex-row justify-content-center">
+                <div class="card-item">
+                    <img src="https://img.freepik.com/free-psd/realistic-ramadan-lantern-illustration-design_23-2151200232.jpg?t=st=1744306070~exp=1744309670~hmac=0e6ae287918df875fd6518648825fae78d39926594bf6c3089ca6788ad581859&w=826" class="card-image">
+                    <h1 class="card-heading">Diwali Lamps</h1>
+                    <p class="card-price">Rs:369</p>
+                </div>
+
+                <div class="card-item">
+                    <img src="https://img.freepik.com/free-psd/diwali-element-illustration_23-2151777917.jpg?t=st=1744308609~exp=1744312209~hmac=01fffd337ddc39bb1c1c1f10ffcae9e2d91f8384bf171ff7469b3275277f3237&w=826" class="card-image" />
+                    <h1 class="card-heading">Diwali Dia</h1>
+                    <p class="card-price">Rs:100</p>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+                <div class="card-item">
+                    <img src="https://img.freepik.com/premium-vector/new-year-firecracker-illustration_977344-1794.jpg?w=826" class="card-image" />
+                    <h1 class="card-heading">Diwali sparklers</h1>
+                    <p class="card-price">Rs:999</p>
+                </div>
+
+                <div class="card-item">
+                    <img src="https://img.freepik.com/free-psd/hand-drawn-bomb-illustration_23-2151470314.jpg?t=st=1744309150~exp=1744312750~hmac=7293f452b6d35ad56cfabd24906ea0ca27d135f8e10dd2e1f4480f773b66215c&w=826" class="card-image" />
+                    <h1 class="card-heading">Diwali crackers</h1>
+                    <p class="card-price">Rs:499</p>
+                </div>
+            </div>
+            <button class="save-button" onclick="display('sectionHome')">Back</button>
+        </div>
+    </div>
+    <div id="sectionThree">
+        <div class="d-flex flex-column justify-content-end bg-container">
+            <div class="card">
+                <h1 class="main-heading">Happy Meals</h1>
+                <p class="paragraph">Discover the best food over the 1000 <br> restaurants </p>
+                <button class="button" onclick="display('sectionHome')"> Back </button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionFour">
+        <div class="background-card-newspaper d-flex flex-column justify-content-end">
+        <div class="news-card">
+            <h1 class="small-h">NEWS OF THE DAY</h1>
+            <p class="big-h">iB Cricket annonces world's first Virtual Reality Cricket League</p>
+            <p class="cricket-paragraph"> iB cricket and Viu together have announced the World's first virtual reality cricket league featuring 12 international cricketers,who will be competing against each other for the iB Cricket Super Over League title in Mumbai.Iconic cricketers like Virender sehwag,Suresh Raina,Brendom McCullum will be competing in the league</p>
+            <button class="cricket-button" onclick="display('sectionHome')">Back</button>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="https://new-assets.ccbp.in/frontend/content/static-ccbp-ui-kit/static-ccbp-ui-kit.js"></script>
+</body>
+
+</html>
