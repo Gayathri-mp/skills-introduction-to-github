@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.bg {
+    background-color: #894bca;
+}
+
+.heading {
+    font-family: "bree serif";
+    font-size: 28px;
+    color: #ffffff;
+    margin: 30px;
+}
+
+.main-image {
+    height: 200px;
+    width: 220px;
+    margin: 20px 0px;
+}
+
+.card-container {
+    background-color: #ffffff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px;
+}
+
+.card-heading {
+    color: #f780c3;
+    font-size: 20px;
+    font-family: "roboto";
+    font-weight: 600;
+    margin: 10px;
+}
+
+.card-store {
+    padding: 20px;
+}
+
+.card-image {
+    height: 110px;
+    width: 110px;
+    padding: 20px;
+}
+
+.text-card {
+    margin: 10px;
+}
+
+.store-heading {
+    font-family: "roboto";
+    font-weight: 600;
+    color: #323f4b;
+    font-size: 20px;
+}
+
+.store-para {
+    color: #7b8794;
+    font-size: 15px;
+    font-family: "roboto";
+}
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="d-flex flex-row justify-content-between">
+            <h1 class="heading">Shop in<br />your<br />favorite<br />stores</h1>
+            <img src="https://assets.ccbp.in/frontend/static-website/stores-img.png" class="main-image" />
+        </div>
+        <div class="card-container">
+            <h1 class="card-heading">Select your store with one click</h1>
+            <div class=" d-flex flex-row store-card">
+                <a href="https://www.amazon.in/"><img src="https://assets.ccbp.in/frontend/static-website/amazon-logo-img.png" class="card-image" /></a>
+                <div class="text-card">
+                    <h1 class="store-heading">Amazon</h1>
+                    <p class="store-para">Online Shopping Free Shipping & Cash<br />on Delivery ...</p>
+                </div>
+            </div>
+            <div class=" d-flex flex-row store-card">
+                <a href="https://www.ikea.com/"><img src="https://assets.ccbp.in/frontend/static-website/ikea-logo-img.png" class="card-image" /></a>
+                <div class="text-card">
+                    <h1 class="store-heading">IKEA</h1>
+                    <p class="store-para">Explore our furniture & home furnishing<br />range,IKEA is a global leader...</p>
+                </div>
+            </div>
+            <div class=" d-flex flex-row store-card">
+                <a href="https://www.bewakoof.com/"><img src="https://assets.ccbp.in/frontend/static-website/bewakoof-logo-img.png" class="card-image" /></a>
+                <div class="text-card">
+                    <h1 class="store-heading">Bewakoof</h1>
+                    <p class="store-para">A Lifestyle Fashion brand That Offers<br />Creative and Distinctive Fashion ...</p>
+                </div>
+            </div>
+            <div class=" d-flex flex-row store-card">
+                <a href="https://www.flipkart.com/"> <img src="https://assets.ccbp.in/frontend/static-website/flipkart-logo-img.png" class="card-image" /></a>
+                <div class="text-card">
+                    <h1 class="store-heading">Flipkart</h1>
+                    <p class="store-para">Wide Range of Genuine Products,Easy<br />Returns,Cash on Delivery,Browse<br />Now...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
