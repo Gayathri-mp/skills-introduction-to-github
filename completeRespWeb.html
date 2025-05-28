@@ -232,6 +232,10 @@
   font-family: "Roboto";
   font-size: 14px;
 }
+.thanking-customers-section-modal-title {
+  color: #d0b200;
+  font-weight: 800;
+}
     </style>
   </head>
   <body>
@@ -563,7 +567,34 @@
               />
             </div>
             <div>
-              <button class="custom-button">Redeem Gift</button>
+              <button type="button" class="custom-button" data-toggle="modal" data-target="#exampleModal">
+                Redeem Gift
+              </button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog mt-5">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title thanking-customers-section-modal-title" id="exampleModalLabel">
+                        Gift Voucher
+                      </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/gift-voucher-img.png"
+                        class="w-100"
+                      />
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-12 col-md-5 d-none d-md-block">
