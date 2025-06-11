@@ -4,7 +4,7 @@ import numpy as np
 cap = cv2.VideoCapture(0)
 canvas = None
 
-lower_color = np.array([110, 30, 130])
+lower_color = np.array([120, 30, 130])
 upper_color = np.array([130, 100, 255])
 
 while True:
