@@ -24,7 +24,7 @@ while True:
         c = max(contours, key=cv2.contourArea)
         ((x, y), radius) = cv2.minEnclosingCircle(c)
         if radius > 5:
-            cv2.circle(canvas, (int(x), int(y)), 5, (255, 0, 0), -1)
+            cv2.circle(canvas, (int(x), int(y)), 5, (0, 255, 0), -1)
 
     combined = cv2.add(frame, canvas)
     cv2.imshow("Virtual Drawing", combined)
